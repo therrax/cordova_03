@@ -5,53 +5,259 @@
 <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <script src="js/pgb.js"></script>
     <script src="cordova.js"></script>
     <link rel="stylesheet" href="jq-mobile/jquery.mobile-1.4.5.min.css" />
-
+    <link rel="stylesheet" href="css/custom.min.css" />
+    
     <script src="js/jquery.js"></script>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
 
 
 
-    
+
 
 
 
     <script src="jq-mobile/jquery.mobile-1.4.5.min.js"></script>
 
-    
-    
+
+
 </head>
 <body onload="init()">
 
-<div data-role="page" id="mainPage">
-    <div class="panel panel-success">
-        <div class="panel-heading">
-            <h4 class="panel-title">BusinessCard</h4>
+    <div data-role="page" id="mainPage">
+        <div class="btn ui-btn">
+            <h1>I.</h1>
+            <a href="#gui" class="ui-btn">GUI</a>
         </div>
-        <div class="panel-body">
-            <h4><b>Imię i nazwisko:</b> Jerzy Kołakowski<br /></h4>
-            <h4><b>Adres email:</b> therrax@gmail.com<br /></h4>
-            <h4><b>Telefon: </b> +48 73337 14 77<br /></h4>
-            <h4><b>Strona www:</b> <a href="http://www.therrax.pl">therrax.pl</a><br /></h4>
-            <h4><b>Kierunek:</b> Informatyka i Ekonometria</h4>
+        <div class="btn ui-btn">
+            <h1>II.</h1>
+            <a href="#business" class="ui-btn">BusinessCard</a>
         </div>
-        <div class="panel-primary panel-footer">
-            <a href="#otherPage" class="ui-btn">Więcej informacji</a>
+        <div class="btn ui-btn">
+            <h1>III.</h1>
+            <a href="#tourist" class="ui-btn">Display pictures</a>
+        </div>
+        <div class="btn ui-btn">
+            <h1>IV.</h1>
+            <a href="#order" class="ui-btn">Order</a>
+        </div>
+        <div class="btn ui-btn">
+            <h1>V.</h1>
+            <a href="#drinks" class="ui-btn">Drinks</a>
         </div>
     </div>
-        
+
+    <div data-role="page" id="tourist">
+        <div data-role="header">
+            <h1>Tourist attractions</h1>
+        </div>
+        <div data-role="tourist">
+            <div>
+                <a href="#masuria" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn" data-transition="pop">Masuria</a>
+                <a href="#pomerania" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn" data-transition="pop">Pomerania</a>
+                <a href="#tatra" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn" data-transition="pop">The Tatra Mountains</a>
+            </div>
+            <div>
+                <div data-role="popup" id="masuria" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                    <img src="img/Masuria.jpg" alt="Masuria">
+                </div>
+                <div data-role="popup" id="pomerania" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                    <img src="img/Pomerania.jpg" alt="Masuria">
+                </div>
+                <div data-role="popup" id="tatra" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                    <img src="img/Tatra.jpg" alt="Masuria">
+                </div>
+                <div class="btn ui-btn">
+                    <a href="#mainPage" class="ui-btn">Powrót</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div data-role="page" id="otherPage">
+        <a href="#mainPage" class="ui-btn">Powrót</a>
+        Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających fragmenty Lorem Ipsum, a ostatnio z zawierającym różne wersje Lorem Ipsum oprogramowaniem przeznaczonym do realizacji druków na komputerach osobistych, jak Aldus PageMaker
+    </div>
+    <div data-role="page" id="gui">
+        <a href="#mainPage" class="ui-btn">Powrót</a>
+        <div data-role="header">
+            <h1>GUI</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <p>The graphical user interface (GUI), is a type of user interface that allows users to interact with electronic devices through graphical icons and visual indicators such as secondary notation, instead of text-based user interfaces, typed command labels or text navigation. GUIs were introduced in reaction to the perceived steep learning curve of command-line interfaces (CLIs), which require commands to be typed on a computer keyboard.</p>
+        </div>
+        <div data-role="footer">
+            <h2>Jerzy Kołakowski</h2>
+        </div>
+    </div>
+    <div data-role="page" id="business">
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h4 class="panel-title"> II. BusinessCard</h4>
+            </div>
+            <div class="panel-body">
+                <h4><b>Imię i nazwisko:</b> Jerzy Kołakowski<br /></h4>
+                <h4><b>Adres email:</b> therrax@gmail.com<br /></h4>
+                <h4><b>Telefon: </b> +48 73337 14 77<br /></h4>
+                <h4><b>Strona www:</b> <a href="http://www.therrax.pl">therrax.pl</a><br /></h4>
+                <h4><b>Kierunek:</b> Informatyka i Ekonometria</h4>
+            </div>
+            <div class="panel-primary panel-footer">
+                <a href="#otherPage" class="ui-btn">Więcej informacji</a>
+                <a href="#mainPage" class="ui-btn">Powrót</a>
+            </div>
+        </div>
+
+    </div>
+<div data-role="page" id="order">
+    <div data-role="header">
+        <h1>Order</h1>
+    </div>
+    <div data-role="main" class="ui-content">
+        <label for="text-basic">To:</label>
+        <input type="text" name="text-basic" id="text-basic" value="" placeholder="Customer name and surname">
+        <label for="date">Date:</label>
+        <input type="date" name="date" id="date" value="">
+        <label for="select-product" class="select">Product:</label>
+        <select name="select-product" id="select-product" data-native-menu="false" data-icon="grid" data-iconpos="left">
+            <option>Choose car:</option>
+            <optgroup label="Car">
+                <option value="bmwM5">BMW M5</option>
+                <option value="bmwm3">BMW M3</option>
+                <option value="mercedesCla45Amg">Mercedes CLA 45 AMG</option>
+                <option value="mercedesCla250">Mercedes CLA 250</option>
+            </optgroup>
+            <optgroup label="Motorbike">
+                <option value="yamahar1">Yamaha R1</option>
+                <option value="yamahar7">Yamaha R7</option>
+            </optgroup>
+        </select>
+        <label for="slider-fill">Quantity:</label>
+        <input type="range" name="slider-fill" id="slider-fill" value="1" min="1" max="10" data-highlight="true">
+        <div style="text-align: center;">
+            <a href="#" class="ui-btn ui-btn-inline ui-icon-check ui-btn-icon-left">Approve</a>
+            <a href="#" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-right">Reject</a>
+        </div>
+        <a href="#mainPage" class="ui-btn">Powrót</a>
+    </div>
 
 </div>
+<div data-role="page" id="drinks">
 
-<div data-role="page" id="otherPage">
-    <a href="#mainPage" class="ui-btn">Powrót</a>
-    Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających fragmenty Lorem Ipsum, a ostatnio z zawierającym różne wersje Lorem Ipsum oprogramowaniem przeznaczonym do realizacji druków na komputerach osobistych, jak Aldus PageMaker
+        <div data-role="panel" id="panel" data-display="overlay">
+            <ul data-role="listview" data-filter="true" data-filter-placeholder="Search recipes...">
+                <li data-icon="delete"><a href="#main" data-rel="close">Close panel</a></li>
+                <li><a href="#kamikaze">Kamikaze</a></li>
+                <li><a href="#sidecar">Sidecar</a></li>
+                <li><a href="#Caipirinha">Caipirinha</a></li>
+            </ul>
+            <a href="#mainPage" class="ui-btn">Powrót</a>
+        </div>
+        <div data-role="header">
+            <a href="#panel" class="ui-btn ui-shadow ui-icon-bars ui-btn-icon-notext"></a>
+            <h1>Drinks</h1>
+        </div>
+    </div>
 
-</div>
+    <div data-role="page" id="kamikaze">
+        <div data-role="panel" id="panel" data-display="overlay">
+            <ul data-role="listview" data-filter="true" data-filter-placeholder="Search recipes...">
+                <li data-icon="delete"><a href="#kamikaze" data-rel="close">Close panel</a></li>
+                <li>Kamikaze</li>
+                <li><a href="#sidecar">Sidecar</a></li>
+                <li><a href="#Caipirinha">Caipirinha</a></li>
+            </ul>
+        </div>
+        <div data-role="header">
+            <a href="#panel" class="ui-btn ui-shadow ui-icon-bars ui-btn-icon-notext"></a>
+            <h1>Drinks</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <img src="img/kamikaze.jpg" alt="Kamikaze">
+            <h2>Kamikaze</h2>
+            <h3>Ingredients</h3>
+            <p>
+
+                30mL Vodka
+                30mL Cointreau
+                30mL Fresh Lime Juice
+
+            </p>
+            <h3>Directions</h3>
+            <p>Fill a boston glass with ice.</p>
+            <p>Add the 3 ingredients.</p>
+            <p>Shake and strain into a chilled coupe .</p>
+            <p>Garnish with a slice of lemon or lime.</p>
+        </div>
+    </div>
+
+    <div data-role="page" id="sidecar">
+        <div data-role="panel" id="panel" data-display="overlay">
+            <ul data-role="listview" data-filter="true" data-filter-placeholder="Search recipes...">
+                <li data-icon="delete"><a href="#sidecar" data-rel="close">Close panel</a></li>
+                <li><a href="#kamikaze">Kamikaze</a></li>
+                <li>Sidecar</li>
+                <li><a href="#iced-tea">Iced Tea</a></li>
+            </ul>
+        </div>
+        <div data-role="header">
+            <a href="#panel" class="ui-btn ui-shadow ui-icon-bars ui-btn-icon-notext"></a>
+            <h1>Drinks</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <img src="img/sidecar.jpg" alt="Sidecar">
+            <h2>Sidecar</h2>
+             <h3>Ingredients</h3>
+            <p>
+                50mL Cognac
+                20mL Triple Sec / Cointreau
+                20mL Fresh Lemon Juice
+            </p>
+            <h3>Directions</h3>
+            <p>Fill boston glass with ice </p>
+            <p>Add all ingredients </p>
+            <p>Shake and double strain into a chilled coupe/cocktail glass </p>
+            <p>Garnish with a twist of lemon</p>
+        </div>
+    </div>
+
+    <div data-role="page" id="Caipirinha">
+        <div data-role="panel" id="panel" data-display="overlay">
+            <ul data-role="listview" data-filter="true" data-filter-placeholder="Search recipes...">
+                <li data-icon="delete"><a href="#Caipirinha" data-rel="close">Close panel</a></li>
+                <li><a href="#kamikaze">Kamikaze</a></li>
+                <li><a href="#sidecar">Sidecar</a></li>
+                <li>Caipirinha</li>
+            </ul>
+        </div>
+        <div data-role="header">
+            <a href="#panel" class="ui-btn ui-shadow ui-icon-bars ui-btn-icon-notext"></a>
+            <h1>Drinks</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <img src="img/Caipirinha.jpg" alt="Caipirinha">
+            <h2>Caipirinha</h2>
+            <h3>Ingredients</h3>
+            <p>
+                60mL Cachaça (Germana Cachaça)
+                Lime
+                2 tsp Brown Sugar
+            </p>
+            <h3>Directions</h3>
+            <p>Cut a lime into eighths and place in Boston glass </p>
+            <p>Add the sugar</p>
+            <p>Muddle </p>
+            <p>Shake & pour into an old fashioned glass</p>
+        </div>
+    </div>
+    
 
 </body>
-
 </html>
